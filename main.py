@@ -8,6 +8,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
+@app.get("/")
+def health():
+    return {"status": "ok"}
 
 app.include_router(ask_router, prefix="/ask", tags=["Ask"])
 app.include_router(ingest_router, prefix="/ingest", tags=["Ingest"])
