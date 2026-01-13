@@ -1,0 +1,9 @@
+supabase
+python-dotenv
+tiktoken
+sentence-transformers
+torch
+langgraph
+fastapi
+uvicorn
+google-genai
